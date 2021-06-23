@@ -11,5 +11,5 @@ scalacOptions += "-Vimplicits"
 val jacksonVersion = "2.12.3"
 
 libraryDependencies ++= Seq(
-  "com.fasterxml.jackson.core" %% "jackson-databind" % jacksonVersion
+  "com.fasterxml.jackson.core" % "jackson-databind" % jacksonVersion
 )
