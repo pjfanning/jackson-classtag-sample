@@ -4,10 +4,12 @@ version := "0.1"
 
 scalaVersion := "2.13.6"
 
-resolvers += Resolver.sonatypeRepo("snapshots")
+scalacOptions += "-Vimplicits"
 
-val jacksonVersion = "2.13.0-SNAPSHOT"
+//resolvers += Resolver.sonatypeRepo("snapshots")
+
+val jacksonVersion = "2.12.3"
 
 libraryDependencies ++= Seq(
-  "com.fasterxml.jackson.module" %% "jackson-module-scala" % jacksonVersion
+  "com.fasterxml.jackson.core" %% "jackson-databind" % jacksonVersion
 )
